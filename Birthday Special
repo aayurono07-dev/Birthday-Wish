@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Kriti ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+overflow-x:hidden;
+background:linear-gradient(135deg,#240014,#5b001d,#9b0037,#ff4f8b);
+color:white;
+}
+
+section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:30px;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+h1{
+font-family:'Great Vibes',cursive;
+font-size:70px;
+text-shadow:0 0 20px gold;
+animation:glow 2s infinite alternate;
+}
+
+h2{
+font-size:40px;
+margin-top:15px;
+}
+
+p{
+max-width:800px;
+font-size:20px;
+line-height:1.8;
+margin-top:20px;
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 15px pink;
+}
+to{
+text-shadow:0 0 40px gold;
+}
+}
+
+button{
+padding:16px 45px;
+font-size:20px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+margin-top:35px;
+background:linear-gradient(45deg,#ff006e,#ffbe0b);
+color:white;
+box-shadow:0 0 20px gold;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(14px);
+padding:35px;
+border-radius:30px;
+border:1px solid rgba(255,255,255,.2);
+box-shadow:0 0 35px rgba(255,255,255,.2);
+max-width:900px;
+}
+
+.heart{
+position:absolute;
+color:#ff80ab;
+animation:float 8s linear infinite;
+opacity:.8;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120px);
+opacity:0;
+}
+
+}
+
+.balloon{
+position:absolute;
+width:70px;
+height:90px;
+border-radius:50%;
+animation:up 14s linear infinite;
+}
+
+.balloon:after{
+content:"";
+position:absolute;
+width:2px;
+height:70px;
+background:white;
+left:34px;
+top:90px;
+}
+
+@keyframes up{
+
+0%{
+transform:translateY(110vh);
+}
+
+100%{
+transform:translateY(-150px);
+}
+
+}
+
+#countdown{
+font-size:35px;
+margin-top:20px;
+color:#ffe082;
+font-weight:bold;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+width:100%;
+margin-top:40px;
+}
+
+.upload-box{
+
+border:3px dashed white;
+padding:40px;
+border-radius:20px;
+background:rgba(255,255,255,.08);
+
+}
+
+.upload-box input{
+margin-top:20px;
+}
+
+.cake{
+font-size:170px;
+cursor:pointer;
+transition:.5s;
+}
+
+.cake:hover{
+transform:scale(1.1);
+}
+
+#loveLetter{
+display:none;
+font-size:23px;
+margin-top:25px;
+line-height:2;
+animation:fade 2s;
+}
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+#giftMessage{
+display:none;
+font-size:30px;
+margin-top:30px;
+color:#ffd54f;
+animation:fade 2s;
+}
+
+footer{
+padding:40px;
+text-align:center;
+font-size:18px;
+background:#2b0010;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section>
+
+<div class="card">
+
+<h1>Happy Birthday</h1>
+
+<h2>Kriti ❤️</h2>
+
+<p>
+
+To the most beautiful girl in my life...
+
+Today the world celebrates your birthday,
+
+but my heart celebrates the day my happiness was born.
+
+You are my smile, my peace, my favourite person and my forever.
+
+Happy Birthday, My Princess.
+
+❤️
+
+</p>
+
+<div id="countdown"></div>
+
+<button onclick="document.getElementById('love').scrollIntoView({behavior:'smooth'})">
+
+Begin Our Love Journey ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<section id="love">
+
+<div class="card">
+
+<h1>💌</h1>
+
+<h2>A Letter From Aayush</h2>
+
+<p>
+
+Every heartbeat reminds me of you.
+
+Every smile carries your name.
+
+No matter where life takes us,
+
+I promise to stand beside you forever.
+
+Happy Birthday My Love.
+
+</p>
+
+<button onclick="showLetter()">
+
+Open Secret Letter
+
+</button>
+
+<div id="loveLetter">
+
+❤️ My Dearest Kriti ❤️
+
+You are the best thing that has ever happened to me.
+
+Thank you for making my world brighter.
+
+May all your dreams come true.
+
+I wish I could celebrate every birthday with you forever.
+
+I Love You More Than Words Can Explain.
+
+Forever Yours,
+
+❤️ Aayush ❤️
+
+</div>
+
+</div>
+
+</section>
